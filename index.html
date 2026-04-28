@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Netflix Clone</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Navbar -->
+<div class="navbar">
+  <div class="logo">NETFLIX</div>
+
+  <div class="nav-links">
+    <a href="#">Home</a>
+    <a href="#">TV Shows</a>
+    <a href="#">Movies</a>
+    <a href="#">My List</a>
+  </div>
+</div>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>Stranger Things</h1>
+    <p>
+      When a young boy disappears, his mother, a police chief,
+      and his friends must confront terrifying supernatural forces.
+    </p>
+
+    <div class="hero-buttons">
+      <button class="play-btn">▶ Play</button>
+      <button class="info-btn">More Info</button>
+    </div>
+  </div>
+</section>
+
+<!-- Movie Rows -->
+<div class="row">
+  <h2>Trending Now</h2>
+
+  <div class="row-posters">
+    <img src="https://image.tmdb.org/t/p/w500/qJ2tW6WMUDux911r6m7haRef0WH.jpg">
+    <img src="https://image.tmdb.org/t/p/w500/8UlWHLMpgZm9bx6QYh0NFoq67TZ.jpg">
+    <img src="https://image.tmdb.org/t/p/w500/9O1Iy9od7hR4kD9X9e8W5kB7gXU.jpg">
+    <img src="https://image.tmdb.org/t/p/w500/6KErczPBROQty7QoIsaa6wJYXZi.jpg">
+    <img src="https://image.tmdb.org/t/p/w500/rAiYTfKGqDCRIIqo664sY9XZIvQ.jpg">
+  </div>
+</div>
+
+<div class="row">
+  <h2>Popular Movies</h2>
+
+  <div class="row-posters">
+    <img src="https://image.tmdb.org/t/p/w500/3bhkrj58Vtu7enYsRolD1fZdja1.jpg">
+    <img src="https://image.tmdb.org/t/p/w500/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg">
+    <img src="https://image.tmdb.org/t/p/w500/p1F51Lvj3sMopG948F5HsBbl43C.jpg">
+    <img src="https://image.tmdb.org/t/p/w500/kOVEVeg59E0wsnXmF9nrh6OmWII.jpg">
+    <img src="https://image.tmdb.org/t/p/w500/yXNVcG0C7Oymg9F9ecXa9MWVwj8.jpg">
+  </div>
+</div>
+
+<footer>
+  <p>Netflix UI Clone | Educational Project</p>
+</footer>
+
+<!-- Movie Preview Modal -->
+<div id="previewModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div class="modal-img"></div>
+    <div class="modal-info">
+      <h2 id="modalTitle"></h2>
+      <p id="modalDesc"></p>
+      <button class="play-btn-modal">▶ Play</button>
+    </div>
+  </div>
+</div>
+
+<!-- Info Modal -->
+<div id="infoModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Stranger Things</h2>
+    <p>Season 4 now available. When a young boy vanishes, a small town uncovers a mystery involving secret experiments.</p>
+    <div class="hero-buttons">
+      <button class="play-btn">▶ Play</button>
+      <button class="info-btn">My List</button>
+    </div>
+  </div>
+</div>
+
+<!-- Play Overlay -->
+<div id="playOverlay" class="play-overlay">
+  <div class="play-content">
+    <span class="close-play">&times;</span>
+    <h1>▶ Now Playing: Stranger Things</h1>
+    <p>Fullscreen video player simulation (Educational demo)</p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
